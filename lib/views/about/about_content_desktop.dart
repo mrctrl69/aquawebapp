@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:AquaScapeBali/views/about/about_detail.dart';
-import 'package:AquaScapeBali/widgets/call_to_action/call_to_action.dart';
 
 import 'about_detail.dart';
 
@@ -13,8 +12,10 @@ class AboutContentDesktop extends StatelessWidget {
       children: <Widget>[
         AboutDetail(),
         Expanded(
-          child: Center(
-            child: CallToAction('Contact Us'),
+          child: Container(
+            // alignment: Alignment.centerRight,
+            height: 500,
+            child: Image.asset('assets/logo.png'),
           ),
         )
       ],

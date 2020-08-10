@@ -8,9 +8,11 @@ class AboutView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: AboutContentMobile(),
-      desktop: AboutContentDesktop(),
+    return SingleChildScrollView(
+      child: ScreenTypeLayout(
+        mobile: AboutContentMobile(),
+        desktop: AboutContentDesktop(),
+      ),
     );
   }
 }

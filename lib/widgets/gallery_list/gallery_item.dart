@@ -10,46 +10,49 @@ class GalleryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Colors.white,
-      elevation: 2,
-      child: SizedBox(
-        width: 360,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              height: 180,
-              width: 360,
-              child: Image.asset(
-                model.imageAsset,
-                fit: BoxFit.fill,
+    return InkWell(
+      onTap: () {},
+      child: Card(
+        color: Colors.white,
+        elevation: 2,
+        child: SizedBox(
+          width: 360,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                height: 180,
+                width: 360,
+                child: Image.asset(
+                  model.imageAsset,
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 15.0,
-                vertical: 20,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    model.title,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 14,
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 15.0,
+                  vertical: 20,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      model.title,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
+                      ),
+                      softWrap: true,
                     ),
-                    softWrap: true,
-                  ),
-                  Text(
-                    '${model.description}',
-                    style: TextStyle(fontSize: 10),
-                  )
-                ],
+                    Text(
+                      '${model.description}',
+                      style: TextStyle(fontSize: 10),
+                    )
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

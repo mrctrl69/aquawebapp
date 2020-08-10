@@ -3,9 +3,9 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:AquaScapeBali/datamodels/gallery_details_model.dart';
 import 'package:AquaScapeBali/styles/text_styles.dart';
 
-class SeasonDetailsMobile extends StatelessWidget {
+class GalleryDetailsMobile extends StatelessWidget {
   final GalleryDetailsModel details;
-  const SeasonDetailsMobile({Key key, this.details}) : super(key: key);
+  const GalleryDetailsMobile({Key key, this.details}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

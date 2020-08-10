@@ -12,10 +12,11 @@ class NavigationBarMobile extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text(
-            'Swipe right',
-            style: TextStyle(color: Colors.green),
-          ),
+          IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }),
           NavBarLogo()
         ],
       ),

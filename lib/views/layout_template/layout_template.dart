@@ -43,6 +43,27 @@ class LayoutTemplate extends StatelessWidget {
         //     ),
         //   ),
         // ),
+        bottomNavigationBar: Container(
+          // alignment: Alignment.topCenter,
+          height: 30.0,
+          color: Colors.blueAccent,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.pin_drop_outlined,
+                color: Colors.white,
+              ),
+              Text(
+                "Denpasar - Bali",
+                style: TextStyle(
+                    fontFamily: "Open Sans",
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

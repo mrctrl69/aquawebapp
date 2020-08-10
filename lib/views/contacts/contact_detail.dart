@@ -20,13 +20,16 @@ class ContactsDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(
+                height: 100,
+              ),
               Text(
-                'Want To\nKnow More?',
+                'Want To Know More?',
                 style: titleTextStyle(sizingInformation.deviceScreenType),
                 textAlign: textAlignment,
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Text(
                 "Curious about our services?\nGo ahead and do live chat with us by clicking the green button you see",

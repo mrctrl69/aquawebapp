@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:AquaScapeBali/views/about/about_detail.dart';
-import 'package:AquaScapeBali/widgets/call_to_action/call_to_action.dart';
 
 class AboutContentMobile extends StatelessWidget {
   const AboutContentMobile({Key key}) : super(key: key);
@@ -15,7 +14,7 @@ class AboutContentMobile extends StatelessWidget {
         SizedBox(
           height: 50,
         ),
-        CallToAction('Contact Us'),
+        Image.asset('assets/logo.png'),
       ],
     );
   }

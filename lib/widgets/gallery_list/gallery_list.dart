@@ -1,31 +1,31 @@
+import 'package:AquaScapeBali/views/gallery/show_image.dart';
 import 'package:flutter/material.dart';
-import 'package:AquaScapeBali/datamodels/gallery_item_model.dart';
 
 import 'gallery_item.dart';
 
 class GalleryList extends StatelessWidget {
   final gallery = [
-    GalleryItemModel(
+    ShowImage(
       title: 'Sample 1',
       description: 'Keterangan style',
-      imageAsset: 'assets/images/image1.jpg',
+      url: 'assets/images/image1.jpg',
     ),
-    GalleryItemModel(
+    ShowImage(
         title: 'Sample 2',
         description: 'Keterangan style',
-        imageAsset: 'assets/images/image2.jpg'),
-    GalleryItemModel(
+        url: 'assets/images/image2.jpg'),
+    ShowImage(
         title: 'Sample 3',
         description: 'Keterangan style',
-        imageAsset: 'assets/images/image3.jpg'),
-    GalleryItemModel(
+        url: 'assets/images/image3.jpg'),
+    ShowImage(
         title: 'Sample 4',
         description: 'Keterangan style',
-        imageAsset: 'assets/images/image4.jpg'),
-    GalleryItemModel(
+        url: 'assets/images/image4.jpg'),
+    ShowImage(
         title: 'Sample 5',
         description: 'Keterangan style',
-        imageAsset: 'assets/images/image5.jpg'),
+        url: 'assets/images/image5.jpg'),
   ];
 
   @override
@@ -35,7 +35,7 @@ class GalleryList extends StatelessWidget {
       runSpacing: 30,
       children: <Widget>[
         ...gallery.map(
-          (gallery) => GalleryItem(model: gallery),
+          (gallery) => GalleryItem(),
         )
       ],
     );

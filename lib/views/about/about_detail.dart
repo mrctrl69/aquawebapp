@@ -20,13 +20,16 @@ class AboutDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(
+                height: 100,
+              ),
               Text(
-                'We Are.\nLocal Entrepreneur',
+                'We Are Local Entrepreneur',
                 style: titleTextStyle(sizingInformation.deviceScreenType),
                 textAlign: textAlignment,
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Text(
                 "We just started our journey to serve people what we can with our skills, because we believe in doing best for our customers. You can also support us by buying our product!",

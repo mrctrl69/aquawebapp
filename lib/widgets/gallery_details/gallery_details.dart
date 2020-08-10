@@ -12,7 +12,7 @@ class GalleryDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       desktop: GalleryDetailsDesktop(details: details),
-      mobile: SeasonDetailsMobile(details: details),
+      mobile: GalleryDetailsMobile(details: details),
     );
   }
 }

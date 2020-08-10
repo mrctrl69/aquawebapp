@@ -20,13 +20,16 @@ class MainDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(
+                height: 100,
+              ),
               Text(
                 'Aqua.\nScape',
                 style: titleTextStyle(sizingInformation.deviceScreenType),
                 textAlign: textAlignment,
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Text(
                 "Hei!\nLooking for Aqua Scape product or services? You're at the right site then.\n Here we offer you our services and produt to build and maintenance your Aqua Scape.\n Still waiting? Why? click on that button now",

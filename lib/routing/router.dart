@@ -14,7 +14,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case AboutRoute:
       return _getPageRoute(AboutView(), settings);
     case GalleryRoute:
-      return _getPageRoute(GalleryView(), settings);
+      return _getPageRoute(Gallery(), settings);
     case ContactRoute:
       return _getPageRoute(ContactView(), settings);
     default:

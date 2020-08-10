@@ -8,9 +8,11 @@ class ContactView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: ContactContentMobile(),
-      desktop: ContactContentDesktop(),
+    return SingleChildScrollView(
+      child: ScreenTypeLayout(
+        mobile: ContactContentMobile(),
+        desktop: ContactContentDesktop(),
+      ),
     );
   }
 }
